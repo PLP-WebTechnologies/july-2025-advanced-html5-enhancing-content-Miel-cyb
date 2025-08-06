@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An HTML5 web page showcasing lists, tables, media, and a complete form with native HTML5 validation.">
+    <title>Advanced HTML5 Content and Form</title>
+</head>
+<body>
+
+    <header>
+        <h1>Advanced HTML5: Content & Form Example</h1>
+        <p>This page demonstrates lists, tables, embedded media, and an accessible HTML5 form with built-in validation.</p>
+    </header>
+
+    <main>
+
+        <!-- Lists Section -->
+        <section>
+            <h2>Top 5 Web Development Skills</h2>
+            <ol>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Responsive Design</li>
+                <li>Accessibility</li>
+            </ol>
+
+            <h3>Web Development Tools</h3>
+            <ul>
+                <li>VS Code</li>
+                <li>Git & GitHub</li>
+                <li>Chrome DevTools</li>
+                <li>Figma</li>
+            </ul>
+        </section>
+
+        <!-- Table Section -->
+        <section>
+            <h2>HTML5 Input Types Overview</h2>
+            <table border="1" cellpadding="8">
+                <thead>
+                    <tr>
+                        <th>Input Type</th>
+                        <th>Purpose</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>text</td>
+                        <td>Single-line text input</td>
+                        <td><input type="text" placeholder="Your name"></td>
+                    </tr>
+                    <tr>
+                        <td>email</td>
+                        <td>Email address</td>
+                        <td><input type="email" placeholder="you@example.com"></td>
+                    </tr>
+                    <tr>
+                        <td>date</td>
+                        <td>Select a date</td>
+                        <td><input type="date"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Media Section -->
+        <section>
+            <h2>HTML5 Media Examples</h2>
+            <figure>
+                <img src="html5-logo.png" alt="HTML5 Logo" width="150">
+                <figcaption>HTML5 Logo</figcaption>
+            </figure>
+
+            <figure>
+                <audio controls>
+                    <source src="Ada Ehi - I Testify.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <figcaption>Sample Audio</figcaption>
+            </figure>
+
+            <figure>
+                <video controls width="320" height="32">
+                    <source src="Navigate Your Future Now-VEED.mp4" type="video/mp4" >
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>Sample Video</figcaption>
+            </figure>
+        </section>
+
+        <!-- HTML5 Form Section -->
+        <section>
+            <h2>Registration Form</h2>
+            <form action="#" method="post" autocomplete="on">
+
+                <!-- Personal Info -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="Enter your name"><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="you@example.com"><br><br>
+
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required><br><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number" required>
+                </fieldset>
+                <br>
+
+                <!-- Account Info -->
+                <fieldset>
+                    <legend>Account Information</legend>
+
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required minlength="5" maxlength="15" placeholder="Choose a username"><br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required minlength="8" placeholder="Enter a password"><br><br>
+
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required minlength="8" placeholder="Re-enter your password">
+                </fieldset>
+                <br>
+
+                <!-- Preferences -->
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <label>
+                        <input type="checkbox" name="newsletter" checked> Subscribe to newsletter
+                    </label><br>
+
+                    <label>
+                        <input type="radio" name="updates" value="email" required> Email Updates
+                    </label>
+                    <label>
+                        <input type="radio" name="updates" value="sms"> SMS Updates
+                    </label><br><br>
+
+                    <label for="country">Country:</label>
+                    <select id="country" name="country" required>
+                        <option value="">-- Select --</option>
+                        <option value="ghana">Ghana</option>
+                        <option value="nigeria">Nigeria</option>
+                        <option value="kenya">Kenya</option>
+                    </select>
+                </fieldset>
+                <br>
+
+                <button type="submit">Register</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Miel. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
